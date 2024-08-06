@@ -13,7 +13,7 @@ logger.info('hello')
 
 **Why Logger?**
 
-Console.log:
+**Console.log:**
 Simplicity: It's a single function with a single purpose: outputting data to the console. Easy to use for quick checks.
 Conciseness: Syntax is straightforward: console.log(message). Perfect for basic debugging.
 Limitations:
@@ -22,7 +22,7 @@ No Levels: No way to categorize messages as debug, info, warn, or error. Makes f
 No Structure: Outputs data as plain strings, making analysis cumbersome.
 No Context: Lacks additional information like timestamps, filenames, or function names, hindering debugging.
 No Configuration: Not configurable. No control over how logs are displayed or stored.
-Loggers:
+**Loggers:**
 Versatility: Feature-rich libraries that provide a robust logging system.
 Multiple Outputs: Send logs to different destinations (console, files, databases, external services) depending on your needs.
 Log Levels: Define different levels (debug, info, warn, error) to categorize messages. Makes filtering and prioritizing logs more efficient.
@@ -41,15 +41,15 @@ Choosing the Right Tool:
 Development and Debugging: console.log remains a great choice for quick debugging and checking values during development.
 Production and Robust Logging: Loggers are essential for production environments. They provide a structured, reliable, and scalable way to capture application events for analysis and debugging.
 
-console.log:
+**console.log:**
 Generally Synchronous: In most cases, console.log is considered synchronous. This means that the code execution pauses until the message is written to the console. However, there can be some browser-specific behaviors that introduce a slight asynchronous aspect.
 Asynchronous Potential in Browsers:
 Browser Buffering: While console.log itself might not be asynchronous, some browsers buffer console output before displaying it. This means the message might not appear immediately after the console.log call, creating an illusion of asynchronous behavior.
 Large Objects: If you're logging a very large object, the browser might take some time to process and display it in the console. This can make it seem like console.log is asynchronous, but it's more about the browser handling the complex data.
-Loggers (Potential for Async):
+**Loggers (Potential for Async):**
 Flexible Output Options: Loggers often provide the ability to send logs to different destinations, some of which might be asynchronous. For example, sending logs to a remote server might involve a network request, which is inherently asynchronous.
 Non-Blocking: Many loggers are designed to be non-blocking. This means that the code execution doesn't pause when you call a logging function. The logger might handle the log message in the background while your code continues running. This improves performance, especially when dealing with large logs.
-In Summary:
+**In Summary:**
 console.log is generally synchronous but can have some browser-specific asynchronous quirks.
 Loggers offer flexibility in output destinations, some of which might be asynchronous. Additionally, they can be non-blocking for better performance.
 The key takeaway is that for most use cases, you won't experience significant asynchronous behavior with console.log or basic logger usage. However, it's good to be aware of the potential nuances, especially when working with complex data or dealing with asynchronous output destinations in loggers.
