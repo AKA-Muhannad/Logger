@@ -2,7 +2,7 @@ This is the best logger ever
 
 **The useage of it**
 
-```
+```ts
 import Logger from './Logger';
 
 const logger = new Logger('context')
