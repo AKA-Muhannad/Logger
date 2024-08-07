@@ -29,7 +29,13 @@ logger.info('hello')
 - Contextual Information: Can automatically include timestamps, filenames, function names, and other contextual data in the logs. Provides valuable information for debugging.
 - Configuration: Highly configurable. You can control the logging behavior (what levels are logged, where they are sent, how they are formatted).
 
-<img width="627" alt="Screenshot 2024-08-04 at 23 09 21" src="https://github.com/user-attachments/assets/e9a7e8f6-33ad-4ac6-be8a-38babd26a1a0">
+<br/>
+
+<p align="center">
+  <img width="627" alt="Screenshot 2024-08-04 at 23 09 21" src="https://github.com/user-attachments/assets/e9a7e8f6-33ad-4ac6-be8a-38babd26a1a0">
+</p>
+
+<br/>
 
 * Performance and Thread Safety: While console.log is generally fast, in browsers it can be blocking, meaning the code execution might pause until the message is written to the console. Loggers typically offer non-blocking options, improving performance. Additionally, some loggers can ensure thread safety, which is crucial in a multi-threaded environment (not typically an issue in most browser JavaScript).
 * Additional Benefits of Loggers:
