@@ -8,7 +8,6 @@ import Logger from './Logger';
 const logger = new Logger('context')
 
 logger.info('hello')
-
 ```
 
 **Why Logger?**
