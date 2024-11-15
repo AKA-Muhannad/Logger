@@ -1,6 +1,6 @@
-This is the best logger ever
+# This is the best logger ever
 
-**The useage of it**
+## The useage of it
 
 ```ts
 import Logger from './Logger';
@@ -12,7 +12,7 @@ logger.info('hello')
 
 <br/>
 
-**Output**
+## Output
 
 <img width="437" alt="Screenshot 2024-08-07 at 22 15 43" src="https://github.com/user-attachments/assets/e4613b70-09f5-4f10-83af-af6be4210336">
 
